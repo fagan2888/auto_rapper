@@ -1,12 +1,6 @@
 from datamuse import datamuse
 import requests
-from rgenius_vars import *
 api = datamuse.Datamuse()
-
-url = "https://api.genius.com/songs/378195"
-headers = {"Authorization": "Bearer " + rgenius_access_token}
-r = requests.get(url, headers=headers)
-print r.json()["response"]
 
 def main():
     # TODO do the input stuff
