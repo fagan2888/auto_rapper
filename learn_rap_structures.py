@@ -3,8 +3,6 @@ from rgenius_vars import *
 from bs4 import BeautifulSoup
 import re
 
-
-
 def make_song_to_lyrics_dict():
     #returns songs of kendrick lamar
     base_url = "https://api.genius.com"
