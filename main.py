@@ -29,7 +29,7 @@ def make_sentence(markov_dict, topic = None, end_rhyme = None, syllables = None)
     word = random.choice(markov_dict.keys())
     count = 0
     while word != "\END" and count < 10:
-        sentence += word
+        sentence += " " + word
         word = random.choice(markov_dict[word])
         count += 1
     return sentence

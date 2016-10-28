@@ -18,11 +18,7 @@ def make_markov_dict():
                 if curWord not in markov_dict:
                     markov_dict[curWord] = []
                 markov_dict[curWord].append(nextWord)
-
-    for word in markov_dict:
-        print word
-        print markov_dict[word]
-    #return markov_dict
+    return markov_dict
 
 
 def make_song_to_lyrics_dict():
